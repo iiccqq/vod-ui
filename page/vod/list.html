@@ -55,7 +55,7 @@
           <div class="row">
             <div class="col-md-4" style="cursor: pointer;" v-for="item in items">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" v-on:click="play" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" v-bind:src="item.image" alt="Card image cap">
+                <img class="card-img-top" v-on:click="play" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" v-bind:src="item.icon" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -97,6 +97,8 @@
   <script src="../assets/js/vendor/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../assets/js/vendor/holder.min.js"></script>
-  <script src="../js/vod/index.js"></script>
+  <script src="../js/vod/global.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/vod/list.js"></script>
   </body>
 </html>
