@@ -23,7 +23,7 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
       <div class="container" >
-        <a class="navbar-brand" href="list.html?catalogId=1">最新</a>
+        <a class="navbar-brand" href="index.html">首页</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,9 +81,9 @@
           <div class="row">
             <div class="col-md-4" style="cursor: pointer;" v-for="item in items">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" v-on:click="play" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" v-bind:src="item.icon" alt="Card image cap">
+                <img class="card-img-top" v-on:click="play(item)" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" v-bind:src="item.icon" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">This is a wider card.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>

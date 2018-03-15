@@ -19,7 +19,7 @@
 
   <body class="text-center">
 
-    <div class="cover-container d-flex h-100 p-10 mx-auto flex-column" style="width:1040px" >
+    <div class="cover-container d-flex h-100 p-10 mx-auto flex-column" style="width:1040px" id="app">
       <header class="masthead mb-auto">
         <div class="inner">
           <h3 class="masthead-brand">片名</h3>
@@ -32,7 +32,7 @@
       </header>
 
       <main role="main" class="inner cover vip_limit_info"   style="width:1040px">
-		<video src="http://fengvod.oss-cn-shanghai.aliyuncs.com/movie.ogg" controls="controls" style="width:1040px">
+		<video v-bind:src="videoUrl" controls="controls" style="width:1040px">
 		your browser does not support the video tag
 		</video>
       </main>
@@ -50,7 +50,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vod/global.js"></script>
+    <script src="../js/vod/play.js"></script>
   </body>
 </html>
