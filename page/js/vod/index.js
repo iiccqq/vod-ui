@@ -17,7 +17,9 @@ var vm = new Vue({
          }
           vm.items = r.indexContent;
           for(var i=0;i<vm.items.length;i++){
+            if(vm.items[i].icon==null||vm.items[i].icon=='')
             vm.items[i].icon = "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
+            
           }
         });
   }
