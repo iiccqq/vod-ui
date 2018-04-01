@@ -56,7 +56,7 @@
         </ol>
         <div class="carousel-inner">
           <div v-bind:class="car.class" v-for="car in carouselItems">
-            <img class="first-slide" v-bind:src="car.image" alt="First slide" v-on:click="play">
+            <img class="first-slide" v-bind:src="car.image" alt="First slide" v-on:click="play(car)">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>Example headline.</h1>
