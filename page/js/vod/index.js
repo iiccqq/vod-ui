@@ -14,7 +14,7 @@ var vm = new Vue({
          for(var i= 0;i<vm.carouselItems.length;i++){
            if(i<r.carousel.length){
             vm.carouselItems[i].image = r.carousel[i].image;
-            vm.carouselItems[i].image = r.carousel[i].contentId;
+            vm.carouselItems[i].contentId = r.carousel[i].contentId;
            }
          }
           vm.items = r.indexContent;
